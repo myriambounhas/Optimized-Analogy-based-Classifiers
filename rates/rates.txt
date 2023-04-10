@@ -1,0 +1,450 @@
+=========================
+relation: heart
+5NN rate: 7,667 
+10NN rate: 18,798 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 7,667 
+10NN rate: 18,798 
+sumP rate: 97,531 
+=========================
+relation: wine
+5NN rate: 13,712 
+10NN rate: 30,225 
+sumP rate: 92,179 
+=========================
+relation: wine
+5NN rate: 13,712 
+10NN rate: 30,225 
+sumP rate: 92,179 
+=========================
+relation: ecoli
+5NN rate: 16,811 
+10NN rate: 34,245 
+sumP rate: 85,354 
+=========================
+relation: wine
+5NN rate: 13,712 
+10NN rate: 30,225 
+sumP rate: 92,179 
+=========================
+relation: iris
+5NN rate: 11,702 
+10NN rate: 27,285 
+sumP rate: 97,111 
+=========================
+relation: heart
+5NN rate: 7,667 
+10NN rate: 18,798 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 5,145 
+10NN rate: 12,417 
+sumP rate: 97,778 
+=========================
+relation: heart
+5NN rate: 7,265 
+10NN rate: 17,915 
+sumP rate: 97,531 
+=========================
+relation: iris
+5NN rate: 10,997 
+10NN rate: 26,088 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 44,183 
+10NN rate: 65,365 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 79,359 
+10NN rate: 91,982 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 93,131 
+10NN rate: 96,281 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 10,997 
+10NN rate: 26,088 
+sumP rate: 97,111 
+=========================
+relation: ecoli
+5NN rate: 85,327 
+10NN rate: 85,353 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 14,400 
+10NN rate: 29,262 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 5,577 
+10NN rate: 11,778 
+sumP rate: 85,354 
+=========================
+relation: heart
+5NN rate: 4,357 
+10NN rate: 7,972 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 4,570 
+10NN rate: 8,338 
+sumP rate: 97,531 
+=========================
+relation: iris
+5NN rate: 12,720 
+10NN rate: 25,560 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 12,720 
+10NN rate: 25,560 
+sumP rate: 97,111 
+=========================
+relation: ecoli
+5NN rate: 6,510 
+10NN rate: 13,774 
+sumP rate: 85,354 
+=========================
+relation: wine
+5NN rate: 0,000 
+10NN rate: 0,185 
+sumP rate: 92,179 
+=========================
+relation: ionosphere
+5NN rate: 0,246 
+10NN rate: 0,529 
+sumP rate: 83,675 
+=========================
+relation: heart
+5NN rate: 1,602 
+10NN rate: 3,238 
+sumP rate: 100,000 
+=========================
+relation: heart
+5NN rate: 0,710 
+10NN rate: 1,530 
+sumP rate: 100,000 
+=========================
+relation: heart
+5NN rate: 0,710 
+10NN rate: 1,530 
+sumP rate: 100,000 
+=========================
+relation: heart
+5NN rate: 0,170 
+10NN rate: 0,727 
+sumP rate: 100,000 
+=========================
+relation: heart
+5NN rate: 9,129 
+10NN rate: 23,157 
+sumP rate: 97,654 
+=========================
+relation: heart
+5NN rate: 5,237 
+10NN rate: 9,482 
+sumP rate: 97,654 
+=========================
+relation: wine
+5NN rate: 0,000 
+10NN rate: 0,185 
+sumP rate: 99,434 
+=========================
+relation: wine
+5NN rate: 2,826 
+10NN rate: 8,038 
+sumP rate: 99,434 
+=========================
+relation: wine
+5NN rate: 2,826 
+10NN rate: 8,038 
+sumP rate: 99,434 
+=========================
+relation: wine
+5NN rate: 2,826 
+10NN rate: 8,038 
+sumP rate: 99,434 
+=========================
+relation: wine
+5NN rate: 0,000 
+10NN rate: 0,185 
+sumP rate: 92,179 
+=========================
+relation: ecoli
+5NN rate: 5,577 
+10NN rate: 11,778 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 0,000 
+10NN rate: 0,000 
+sumP rate: 85,354 
+=========================
+relation: iris
+5NN rate: 0,316 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 0,316 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 0,316 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 0,316 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 12,323 
+10NN rate: 24,542 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 0,316 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: iris
+5NN rate: 12,323 
+10NN rate: 0,316 
+sumP rate: 97,111 
+=========================
+relation: heart
+5NN rate: 38,829 
+10NN rate: 56,868 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 7,464 
+10NN rate: 17,492 
+sumP rate: 97,531 
+=========================
+relation: ecoli
+5NN rate: 13,422 
+10NN rate: 28,052 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 15,192 
+10NN rate: 31,759 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 15,679 
+10NN rate: 32,824 
+sumP rate: 85,354 
+=========================
+relation: diabetes
+5NN rate: 1,701 
+10NN rate: 3,355 
+sumP rate: 100,000 
+=========================
+relation: ecoli
+5NN rate: 3,468 
+10NN rate: 6,941 
+sumP rate: 100,000 
+=========================
+relation: ecoli
+5NN rate: 24,329 
+10NN rate: 39,692 
+sumP rate: 97,825 
+=========================
+relation: ecoli
+5NN rate: 2,066 
+10NN rate: 3,923 
+sumP rate: 100,000 
+=========================
+relation: ecoli
+5NN rate: 24,329 
+10NN rate: 39,692 
+sumP rate: 97,825 
+=========================
+relation: ecoli
+5NN rate: 3,255 
+10NN rate: 6,422 
+sumP rate: 100,000 
+=========================
+relation: ecoli
+5NN rate: 2,066 
+10NN rate: 3,923 
+sumP rate: 100,000 
+=========================
+relation: iris
+5NN rate: 45,177 
+10NN rate: 67,211 
+sumP rate: 98,000 
+=========================
+relation: iris
+5NN rate: 2,971 
+10NN rate: 5,119 
+sumP rate: 100,000 
+=========================
+relation: heart
+5NN rate: 28,482 
+10NN rate: 49,202 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 3,387 
+10NN rate: 12,282 
+sumP rate: 97,531 
+=========================
+relation: heart
+5NN rate: 7,892 
+10NN rate: 18,375 
+sumP rate: 97,531 
+=========================
+relation: ecoli
+5NN rate: 15,679 
+10NN rate: 32,824 
+sumP rate: 85,354 
+=========================
+relation: wine
+5NN rate: 12,372 
+10NN rate: 29,678 
+sumP rate: 92,179 
+=========================
+relation: wine
+5NN rate: 10,274 
+10NN rate: 25,697 
+sumP rate: 92,179 
+=========================
+relation: ecoli
+5NN rate: 13,854 
+10NN rate: 28,995 
+sumP rate: 85,354 
+=========================
+relation: ecoli
+5NN rate: 13,422 
+10NN rate: 28,052 
+sumP rate: 85,354 
+=========================
+relation: diabetes
+5NN rate: 3,822 
+10NN rate: 9,932 
+sumP rate: 95,837 
+=========================
+relation: AND
+CAPrate: 2981,667 
+AP rate: 1497105,812 
+sumP rate: 100,000 
+=========================
+relation: AND
+CAPrate: 2981,667 
+AP rate: 1497105,812 
+sumP rate: 100,000 
+=========================
+relation: AND
+CAPrate: 0,000 
+AP rate: 33566,453 
+sumP rate: 100,000 
+=========================
+relation: AND
+CAPrate: 21,368 
+AP rate: 380932,115 
+sumP rate: 100,000 
+=========================
+relation: AND
+CAPrate: 3710,962 
+AP rate: 1905232,051 
+sumP rate: 100,000 
+=========================
+relation: AND
+CAPrate: 3710,962 
+AP rate: 1905232,051 
+sumP rate: 100,000 
+=========================
+relation: AttrXOR
+CAPrate: 3266,303 
+AP rate: 1493223,611 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 25225,111 
+AP rate: 1957187,778 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 1970494,000 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 0,000 
+AP rate: 0,000 
+sumP rate: 0,000 
+=========================
+relation: iris
+CAPrate: 0,000 
+AP rate: 0,000 
+sumP rate: 0,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 0,000 
+AP rate: 0,000 
+sumP rate: 0,000 
+=========================
+relation: iris
+CAPrate: 0,000 
+AP rate: 0,000 
+sumP rate: 0,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2144719,333 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2155468,000 
+sumP rate: 100,000 
+=========================
+relation: iris
+CAPrate: 23601,333 
+AP rate: 2155468,000 
+sumP rate: 100,000 
