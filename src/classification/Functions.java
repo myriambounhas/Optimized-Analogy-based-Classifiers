@@ -19,54 +19,7 @@ import weka.core.neighboursearch.LinearNNSearch;
  */
 public class Functions {
 
-    public static int superior(int[] sump, int[] bestp, int[] vote) {
-        boolean[] sumpArgmax = new boolean[sump.length];
-        boolean[] bestpArgmax = new boolean[bestp.length];
-        int supi = -1, sup = -1, occ = 0;
-        for (int i = 0; i < sump.length; i++) {
-            if (sump[i] > sup) {
-                sup = sump[i];
-                supi = i;
-                Arrays.fill(sumpArgmax, false);
-                sumpArgmax[i] = true;
-                occ = 1;
-            } else if (sump[i] == sup) {
-                sumpArgmax[i] = true;
-                occ++;
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = -1;
-            occ = 0;
-            for (int i = 0; i < bestp.length; i++) {
-                if (sumpArgmax[i] && bestp[i] > sup) {
-                    sup = bestp[i];
-                    supi = i;
-                    Arrays.fill(bestpArgmax, false);
-                    bestpArgmax[i] = true;
-                    occ = 1;
-                } else if (sumpArgmax[i] && bestp[i] == sup) {
-                    bestpArgmax[i] = true;
-                    occ++;
-                }
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = -1;
-            occ = 0;
-            for (int i = 0; i < vote.length; i++) {
-                if (bestpArgmax[i] && vote[i] > sup) {
-                    sup = vote[i];
-                    supi = i;
-                }
-            }
-        }
-        return supi;
-    }
-
-    public static int superior(double[] sump, double[] bestp, double[] vote) {
+   public static int superior(double[] sump, double[] bestp, double[] vote) {
         boolean[] sumpArgmax = new boolean[sump.length];
         boolean[] bestpArgmax = new boolean[bestp.length];
         int supi = -1, occ = 0;
@@ -174,16 +127,7 @@ public class Functions {
         return supi;
     }
 
-    public static boolean unique(int max, int[] tab) {
-        int occ = 0;
-        for (int i = 0; i < tab.length; i++) {
-            if (max == tab[i]) {
-                occ++;
-            }
-        }
-        return (occ == 1);
-    }
-    
+      
     public static boolean unique(double max, double[] tab) {
         int occ = 0;
         for (int i = 0; i < tab.length; i++) {
@@ -194,149 +138,8 @@ public class Functions {
         return (occ == 1);
     }
 
-    public static void eliminate(int[] vote, int max) {
-        for (int i = 0; i < vote.length; i++) {
-            if (vote[i] != max) {
-                vote[i] = -1;
-            }
-        }
-    }
-
-    public static void reset(int[] vote) {
-        for (int i = 0; i < vote.length; i++) {
-            if (vote[i] != -1) {
-                vote[i] = 0;
-            }
-        }
-    }
-
-    public static int elect(int[] bestp, int[] min_hd, int[] vote) {
-        boolean[] bestpArgmax = new boolean[bestp.length];
-        boolean[] min_hdArgmin = new boolean[min_hd.length];
-        int supi = -1, sup = -1, occ = 0;
-        for (int i = 0; i < bestp.length; i++) {
-            if (bestp[i] > sup) {
-                sup = bestp[i];
-                supi = i;
-                Arrays.fill(bestpArgmax, false);
-                bestpArgmax[i] = true;
-                occ = 1;
-            } else if (bestp[i] == sup) {
-                bestpArgmax[i] = true;
-                occ++;
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = 500;
-            occ = 0;
-            for (int i = 0; i < min_hd.length; i++) {
-                if (bestpArgmax[i] && min_hd[i] < sup) {
-                    sup = min_hd[i];
-                    supi = i;
-                    Arrays.fill(min_hdArgmin, false);
-                    min_hdArgmin[i] = true;
-                    occ = 1;
-                } else if (bestpArgmax[i] && min_hd[i] == sup) {
-                    min_hdArgmin[i] = true;
-                    occ++;
-                }
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = -1;
-            occ = 0;
-            for (int i = 0; i < vote.length; i++) {
-                if (min_hdArgmin[i] && vote[i] > sup) {
-                    sup = vote[i];
-                    supi = i;
-                }
-            }
-        }
-        return supi;
-    }
-    public static int elect(double[] bestp, double[] min_hd, double[] vote) {
-        boolean[] bestpArgmax = new boolean[bestp.length];
-        boolean[] min_hdArgmin = new boolean[min_hd.length];
-        int supi = -1, occ = 0;
-        double sup = -1;
-        for (int i = 0; i < bestp.length; i++) {
-            if (bestp[i] > sup) {
-                sup = bestp[i];
-                supi = i;
-                Arrays.fill(bestpArgmax, false);
-                bestpArgmax[i] = true;
-                occ = 1;
-            } else if (bestp[i] == sup) {
-                bestpArgmax[i] = true;
-                occ++;
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = 500;
-            occ = 0;
-            for (int i = 0; i < min_hd.length; i++) {
-                if (bestpArgmax[i] && min_hd[i] < sup) {
-                    sup = min_hd[i];
-                    supi = i;
-                    Arrays.fill(min_hdArgmin, false);
-                    min_hdArgmin[i] = true;
-                    occ = 1;
-                } else if (bestpArgmax[i] && min_hd[i] == sup) {
-                    min_hdArgmin[i] = true;
-                    occ++;
-                }
-            }
-        }
-        if (occ > 1) {
-            supi = -1;
-            sup = -1;
-            occ = 0;
-            for (int i = 0; i < vote.length; i++) {
-                if (min_hdArgmin[i] && vote[i] > sup) {
-                    sup = vote[i];
-                    supi = i;
-                }
-            }
-        }
-        return supi;
-    }
-
-    public static int elect( double[] min_hd, double[] vote) {
+ 
        
-        boolean[] min_hdArgmin = new boolean[min_hd.length];
-        int supi = -1, occ = 0;
-        double sup = 1000;
-        
-            for (int i = 0; i < min_hd.length; i++) {
-                if ( min_hd[i] < sup) {
-                    sup = min_hd[i];
-                    supi = i;
-                    Arrays.fill(min_hdArgmin, false);
-                    min_hdArgmin[i] = true;
-                    occ = 1;
-                } else if ( min_hd[i] == sup) {
-                    min_hdArgmin[i] = true;
-                    occ++;
-                }
-            }
-        
-        if (occ > 1) {
-            supi = -1;
-            sup = -1;
-            occ = 0;
-            for (int i = 0; i < vote.length; i++) {
-                if (min_hdArgmin[i] && vote[i] > sup) {
-                    sup = vote[i];
-                    supi = i;
-                }
-            }
-        }
-        return supi;
-    }
-
     public static double accuracy(int[][] confusionMatrix) {
         int total = 0, success = 0;
         for (int i = 0; i < confusionMatrix.length; i++) {
@@ -351,19 +154,7 @@ public class Functions {
     }
 
     
-    public static double errorRate(int[][] confusionMatrix) {
-        int total = 0, err = 0;
-        for (int i = 0; i < confusionMatrix.length; i++) {
-            for (int j = 0; j < confusionMatrix[0].length; j++) {
-                total += confusionMatrix[i][j];
-                if (i != j) {
-                    err += confusionMatrix[i][j];
-                }
-            }
-        }
-        return 1.0 * err / total;
-    }
-    
+   
     public static double recall(int cl_value, int[][] confusionMatrix) {
         int truePositive = confusionMatrix[cl_value][cl_value];
         int falseNegative = 0;
@@ -393,46 +184,8 @@ public class Functions {
         return 2 * precision * recall / (precision + recall);
     }
 
-    public static double continuousAnalogy(double a, double b, double c) {
-        double ap = 1;
-        //missing attributes are coded -1 in voting dataset
-        if ((a == -1) || (b == -1) || (c == -1)) {
-            ap = 0;
-        } else {
-
-            if ((a >= b && b >= c) || (a <= b && b <= c)) { //order a,b,c ou c,b,a
-                ap = 1 - Math.abs(a + c - 2 * b);
-//                System.out.println("ap = " + ap );
-
-            } else {// no oreder for a,b, c
-//                if ((a <= b && b >= c) || (a >= b && b <= c)) {
-                    double v1 = Math.abs(a - b);
-                    double v2 = Math.abs(b - c);
-                    double max = Math.max(v1, v2);
-                    ap = 1 - max;
-//                    System.out.println("ap = " + ap );
-//                }
-            }
-            // if(ap<0||ap>1)  System.out.println("OUT OF BOUND EXCEPTION  ap: "+ ap);
-        }
-        return ap;
-    }
-    
-     public boolean isAnalogyProportions(String a, String b, String c) {
-// a revoir...
-
-
-
-    // if((a !=b) &&(a!=c) )
-    //   return false;
-
-    if ( (a.compareTo(b) == 0) || (a.compareTo(c) == 0)) //||(b.compareTo(c)==0 ))
-      return true;
-
-    else
-      return false;
-
-  }
+       
+   
    //type s:s::s:s   
   public static Boolean Analogy1(String a ,String b,String c, String d)
   {
@@ -502,7 +255,8 @@ public class Functions {
       return -1;
 
   }
-    public  double  AnalogyEtoile(double a , double b, double c, double d)
+
+ public  double  AnalogyEtoile(double a , double b, double c, double d)
   {
 
    double AStar= 1;
@@ -569,16 +323,7 @@ if((a==-1) || (b==-1)||(c==-1)||(d==-1)) A =0 ;
         return max;
     }
     
- public  static int  max (int a , int b)
-    {
-      int max;
 
-      if (a > b)
-        max = a;
-        else max= b;
-
-        return max;
-    }
  public static double  min (double a , double b)
   {
     double min;
@@ -588,32 +333,7 @@ if((a==-1) || (b==-1)||(c==-1)||(d==-1)) A =0 ;
       else min= b;
       return min;
   }
-  public static int  min (int a , int b)
-  {
-    int min;
-
-    if (a < b)
-      min = a;
-      else min= b;
-      return min;
-  } 
-public static int getInstanceIndex ( Instances instances, Instance x){
-     // pbm
-     int ind = -1;
-     Enumeration<Instance> trainers = instances.enumerateInstances();
-     int i=0;
-     while (trainers.hasMoreElements()) {
-                        Instance instance = (Instance)  trainers.nextElement();
-                        if(instance.toString().compareTo(x.toString())==0){
-                          // System.out.println("nn inst: "+ x.toString());
-                           //System.out.println("inst: "+ instance.toString());
-                           ind= i;
-                           //System.out.println("ind: "+ ind);
-                        }
-                        i++;
-                    }
-      return ind;
-  }
+ 
 
    public static void Display (double[] Tab) {
 
@@ -670,3 +390,4 @@ public  static Instances [] getNearestNeighbors (Instances validators, Instances
 
     
 }
+
